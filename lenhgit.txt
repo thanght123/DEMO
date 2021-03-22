@@ -1,0 +1,27 @@
+các lẹnh cơ bản :
+1.git clone : clone source
+2.Tạo nhánh mới 
+-git branch<name-branch>
+3. Checkout snag nhánh khác
+-git checkout <name_branch>
+4.Tạo nhánh + checkout
+-git checkout -b <name-branch>
+5.Cập nhật sự thay dổi
+-git add <file_name> or git add .
+6.commit sự thay đổi
+-git commit -m "message"
+7.kéo source code từ server về local
+-git pull origin<namebranch>
+8.đẩy source code từ local lên server
+-git push origin<name-branch>
+9.Thực hiện merge code giữa nhánh đang phát triển với nhánh chung
+git rabase<name_branch>
+10/ thực hiện nhánh chung với nhánh đang phát triển 
+-git merge <branch>
+
+/*
+Lưu ý : trường hợp conflict
+1.Thực hiện vào file bị conflict để giải quyết vấn đề
+2.Sau đó sẽ add lại file conflict(git add) và commit()-git commit sao đó đẩy lên server (git pull)
+trước mỗi lần push thì cần phải pull để đảm bảo code là mới nhất
+*/
